@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 300px;
+}
+
+.logo {
+    font-size: 60px;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 75px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.content {
+    flex: 2;
+}
+
+#animasi1 {
+    flex: 3;
+    margin: auto;
+}
