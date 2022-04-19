@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* navbar start */
+/* navbar */
 nav {
     display: flex;
     flex-direction: row;
@@ -26,10 +26,8 @@ nav {
 .nav-menu a {
     text-decoration: none;
 }
-/* navbar end */
 
-
-/* slider start */
+/* slider */
 .slider {
     width: 90vw;
     height: 40vw;
@@ -47,7 +45,7 @@ nav {
     align-items: center;
 }
 
-.radio-btn {
+input[name = "radio-btn"] {
     display: none;
 }
 
@@ -79,8 +77,91 @@ nav {
     height: 100%;
     width: auto;
 }
-/* slider end */
 
+/* slider manual navigation */
+.manual-navigation {
+    position: absolute;
+    width: 100vw;
+    margin-top: 35%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.manual-button {
+    border: 2px solid #2D6FFA;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.75s;
+}
+
+.manual-button:hover {
+    background-color: #2D6FFA;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+
+
+
+/* slider automatic navigation */
+.automatic-navigation {
+    position: absolute;
+    width: 100vw;
+    margin-top: 35%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    /* display: none; */
+}
+
+.automatic-navigation div {
+    border: 2px solid #2D6FFA;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.75s;
+}
+
+#radio1:checked ~ .automatic-navigation .auto-button1 {
+    background-color: #2D6FFA;
+}
+
+#radio2:checked ~ .automatic-navigation .auto-button2 {
+    background-color: #2D6FFA;
+}
+
+#radio3:checked ~ .automatic-navigation .auto-button3 {
+    background-color: #2D6FFA;
+}
+
+#radio4:checked ~ .automatic-navigation .auto-button4 {
+    background-color: #2D6FFA;
+}
+
+#radio5:checked ~ .automatic-navigation .auto-button5 {
+    background-color: #2D6FFA;
+}
 
 /* other components */
 .btn {

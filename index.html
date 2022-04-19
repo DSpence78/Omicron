@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -20,16 +21,15 @@
     </nav>
     <div class="slider">
         <div class="slides">
-            <div class="radio-btn">
-                <input type="radio" name="radio-btn" id="radio1" onclick="counter = 1">
-                <input type="radio" name="radio-btn" id="radio2" onclick="counter = 2">
-                <input type="radio" name="radio-btn" id="radio3" onclick="counter = 3">
-                <input type="radio" name="radio-btn" id="radio4" onclick="counter = 4">
-            </div>
+            <input type="radio" name="radio-btn" id="radio1" checked onclick="resetTimer();counter = 1;">
+            <input type="radio" name="radio-btn" id="radio2" onclick="resetTimer();counter = 2;">
+            <input type="radio" name="radio-btn" id="radio3" onclick="resetTimer();counter = 3;">
+            <input type="radio" name="radio-btn" id="radio4" onclick="resetTimer();counter = 4;">
+            <input type="radio" name="radio-btn" id="radio5" onclick="resetTimer();counter = 5;">
             <div class="thumbnail first">
                 <div class="thumbnail-text">
                     <div class="thumbnail-title">
-                        <h1>Judul </h1>
+                        <h1>Judul 1</h1>
                     </div>
                     <div class="thumbnail-description">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam dignissimos nemo sunt praesentium dolorum non magni? Rerum voluptatem, eligendi velit ratione voluptas nam maxime similique optio mollitia temporibus est accusamus alias labore nesciunt dolorum facilis aliquid recusandae eaque dolore obcaecati porro assumenda. Minus aspernatur saepe officia corporis, hic dolorum animi!</p>
@@ -43,57 +43,106 @@
             <div class="thumbnail">
                 <div class="thumbnail-text">
                     <div class="thumbnail-title">
-                        <h1>Judul </h1>
+                        <h1>Judul 2</h1>
                     </div>
                     <div class="thumbnail-description">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam dignissimos nemo sunt praesentium dolorum non magni? Rerum voluptatem, eligendi velit ratione voluptas nam maxime similique optio mollitia temporibus est accusamus alias labore nesciunt dolorum facilis aliquid recusandae eaque dolore obcaecati porro assumenda. Minus aspernatur saepe officia corporis, hic dolorum animi!</p>
                     </div>
-                    <div class="thumbnail-button">
-                        <a href="">Lihat Selengkapnya</a>
-                    </div>
+                    <button class="thumbnail-button btn">Pelajari Lebih Lanjut</button>
+                </div>
+                <div class="thumbnail-image">
+                    <img src="https://img.freepik.com/free-vector/isometric-data-protection-concept-with-parent-child-login-window-lock-3d_1284-63713.jpg?w=740">
                 </div>
             </div>
             <div class="thumbnail">
                 <div class="thumbnail-text">
                     <div class="thumbnail-title">
-                        <h1>Judul </h1>
+                        <h1>Judul 3</h1>
                     </div>
                     <div class="thumbnail-description">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam dignissimos nemo sunt praesentium dolorum non magni? Rerum voluptatem, eligendi velit ratione voluptas nam maxime similique optio mollitia temporibus est accusamus alias labore nesciunt dolorum facilis aliquid recusandae eaque dolore obcaecati porro assumenda. Minus aspernatur saepe officia corporis, hic dolorum animi!</p>
                     </div>
-                    <div class="thumbnail-button">
-                        <a href="">Lihat Selengkapnya</a>
-                    </div>
+                    <button class="thumbnail-button btn">Pelajari Lebih Lanjut</button>
+                </div>
+                <div class="thumbnail-image">
+                    <img src="https://img.freepik.com/free-vector/isometric-data-protection-concept-with-parent-child-login-window-lock-3d_1284-63713.jpg?w=740">
                 </div>
             </div>
             <div class="thumbnail">
                 <div class="thumbnail-text">
                     <div class="thumbnail-title">
-                        <h1>Judul </h1>
+                        <h1>Judul 4</h1>
                     </div>
                     <div class="thumbnail-description">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam dignissimos nemo sunt praesentium dolorum non magni? Rerum voluptatem, eligendi velit ratione voluptas nam maxime similique optio mollitia temporibus est accusamus alias labore nesciunt dolorum facilis aliquid recusandae eaque dolore obcaecati porro assumenda. Minus aspernatur saepe officia corporis, hic dolorum animi!</p>
                     </div>
-                    <div class="thumbnail-button">
-                        <a href="">Lihat Selengkapnya</a>
-                    </div>
+                    <button class="thumbnail-button btn">Pelajari Lebih Lanjut</button>
+                </div>
+                <div class="thumbnail-image">
+                    <img src="https://img.freepik.com/free-vector/isometric-data-protection-concept-with-parent-child-login-window-lock-3d_1284-63713.jpg?w=740">
                 </div>
             </div>
             <div class="thumbnail">
                 <div class="thumbnail-text">
                     <div class="thumbnail-title">
-                        <h1>Judul </h1>
+                        <h1>Judul 5</h1>
                     </div>
                     <div class="thumbnail-description">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam dignissimos nemo sunt praesentium dolorum non magni? Rerum voluptatem, eligendi velit ratione voluptas nam maxime similique optio mollitia temporibus est accusamus alias labore nesciunt dolorum facilis aliquid recusandae eaque dolore obcaecati porro assumenda. Minus aspernatur saepe officia corporis, hic dolorum animi!</p>
                     </div>
-                    <div class="thumbnail-button">
-                        <a href="">Lihat Selengkapnya</a>
-                    </div>
+                    <button class="thumbnail-button btn">Pelajari Lebih Lanjut</button>
+                </div>
+                <div class="thumbnail-image">
+                    <img src="https://img.freepik.com/free-vector/isometric-data-protection-concept-with-parent-child-login-window-lock-3d_1284-63713.jpg?w=740">
                 </div>
             </div>
+            
+            <!-- slider automatic navigation start -->
+            <div class="automatic-navigation">
+                <div class="auto-button1"></div>
+                <div class="auto-button2"></div>
+                <div class="auto-button3"></div>
+                <div class="auto-button4"></div>
+                <div class="auto-button5"></div>
+            </div>
+            <!-- slider automatic navigation end -->
+            <!-- slider manual navigation start -->
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-button"></label>
+                <label for="radio2" class="manual-button"></label>
+                <label for="radio3" class="manual-button"></label>
+                <label for="radio4" class="manual-button"></label>
+                <label for="radio5" class="manual-button"></label>
+            </div>
+            <!-- slider manual navigation end -->
         </div>
     </div>
-    <lottie-player id="animasi1" src="https://assets10.lottiefiles.com/packages/lf20_msdmfngy.json"  background="transparent"  speed="1"  style="width: auto; height: 500px;"  loop  autoplay></lottie-player>
+
+    <script>
+        var counter = 2;
+
+        function slideCounter(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 5){
+                counter = 1;
+            }
+        }
+
+        var timer = setInterval(slideCounter, 5000);
+
+        function resetTimer(){
+            clearInterval(timer);
+            timer = setInterval(slideCounter, 5000);
+        }
+
+        /* timer = setInterval(function(){
+            counter++;
+            document.getElementById('radio' + counter).checked = true;
+            if(counter > 5){
+                counter = 1;
+            }
+        }, 5000); */
+    </script>
 </body>
 </html>
