@@ -66,16 +66,16 @@ input[name = "radio-btn"] {
 }
 
 .thumbnail-image {
-    flex: 2;
-    padding: 10px;
+    flex: 3;
     height: 100%;
+    display: flex;
 }
 
 .thumbnail-image img {
     display: block;
     margin: auto;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 /* slider manual navigation */
@@ -132,7 +132,6 @@ input[name = "radio-btn"] {
     display: flex;
     justify-content: center;
     gap: 40px;
-    /* display: none; */
 }
 
 .automatic-navigation div {
