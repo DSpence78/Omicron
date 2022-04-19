@@ -8,9 +8,9 @@
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 300px;
+    margin: 0 25px;
 }
 
 .logo {
@@ -35,7 +35,7 @@ nav {
     height: 40vw;
     margin: 0 auto;
     overflow: hidden;
-    background-color: lightblue;
+    /* background-color: whitesmoke; */
     border-radius: 10px;
 }
 
@@ -58,28 +58,39 @@ nav {
 }
 
 .thumbnail-text {
-    flex: 2;
+    flex: 3;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 25px;
-    padding: 10px;
+    padding: 10px 50px;
 }
 
 .thumbnail-image {
-    flex: 3;
+    flex: 2;
     padding: 10px;
-    text-align: center;
     height: 100%;
 }
 
 .thumbnail-image img {
     display: block;
     margin: auto;
-    /* make center vertically */
     height: 100%;
-    width: 100%;
-    padding: 50px;
+    width: auto;
 }
 /* slider end */
+
+
+/* other components */
+.btn {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #000;
+    border: 4px solid #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 5px 5px 1px #2D6FFA;
+    cursor: pointer;
+}
