@@ -53,6 +53,7 @@ input[name = "radio-btn"] {
     display: flex;
     width: 20%;
     height: 100%;
+    transition: 0.75s;
 }
 
 .thumbnail-text {
