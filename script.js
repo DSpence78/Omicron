@@ -2,10 +2,10 @@ var counter = 1;
 
 function slideCounter(){
     counter++;
-    document.getElementById('radio' + counter).checked = true;
     if(counter > 5){
         counter = 1;
     }
+    document.getElementById('radio' + counter).checked = true;
 }
 
 var timer = setInterval(slideCounter, 5000);
