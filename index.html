@@ -117,32 +117,5 @@
             <!-- slider manual navigation end -->
         </div>
     </div>
-
-    <script>
-        var counter = 2;
-
-        function slideCounter(){
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if(counter > 5){
-                counter = 1;
-            }
-        }
-
-        var timer = setInterval(slideCounter, 5000);
-
-        function resetTimer(){
-            clearInterval(timer);
-            timer = setInterval(slideCounter, 5000);
-        }
-
-        /* timer = setInterval(function(){
-            counter++;
-            document.getElementById('radio' + counter).checked = true;
-            if(counter > 5){
-                counter = 1;
-            }
-        }, 5000); */
-    </script>
 </body>
 </html>
