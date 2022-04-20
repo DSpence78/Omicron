@@ -1,8 +1,8 @@
-var counter = 2;
+var counter = 1;
 
 function slideCounter(){
-    document.getElementById('radio' + counter).checked = true;
     counter++;
+    document.getElementById('radio' + counter).checked = true;
     if(counter > 5){
         counter = 1;
     }
@@ -23,6 +23,7 @@ function nextSlide() {
         counter++;
     }
     document.getElementById('radio' + counter).checked = true;
+    resetTimer();
 }
 
 function previousSlide() {
@@ -33,4 +34,5 @@ function previousSlide() {
         counter--;
     }
     document.getElementById('radio' + counter).checked = true;
+    resetTimer();
 }
