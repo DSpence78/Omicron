@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /* navbar */
@@ -62,6 +63,9 @@ input[name = "radio-btn"] {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    height: max-content;
+    width: max-content;
+    margin: auto;
     gap: 25px;
     padding: 10px 50px;
 }
@@ -163,15 +167,52 @@ input[name = "radio-btn"] {
     background-color: #2D6FFA;
 }
 
+/* profile card */
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    text-align: center;
+}
+
+.card {
+    border: 2px solid #2D6FFA;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
 /* other components */
 .btn {
     padding: 10px;
     border-radius: 15px;
     background-color: #000;
-    border: 4px solid #000;
+    border: 2px solid #000;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
     box-shadow: 5px 5px 1px #2D6FFA;
     cursor: pointer;
+}
+
+.next-prev-button {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: -55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 82.5vw;
+    width: 100%;
+    margin: auto;
+}
+
+.next-prev-button img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.prev-button {
+    transform: scale(-1);
 }

@@ -8,11 +8,11 @@ function slideCounter(){
     document.getElementById('radio' + counter).checked = true;
 }
 
-var timer = setInterval(slideCounter, 5000);
+var timer = setInterval(slideCounter, 10000);
 
 function resetTimer(){
     clearInterval(timer);
-    timer = setInterval(slideCounter, 5000);
+    timer = setInterval(slideCounter, 10000);
 }
 
 function nextSlide() {
