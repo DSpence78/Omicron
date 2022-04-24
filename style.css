@@ -55,10 +55,11 @@ input[name = "radio-btn"] {
     width: 20%;
     height: 100%;
     transition: 0.75s;
+    align-items: center;
 }
 
 .thumbnail-text {
-    flex: 3;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -71,17 +72,14 @@ input[name = "radio-btn"] {
 }
 
 .thumbnail-image {
-    flex: 3;
-    height: 100%;
-    display: flex;
+    flex: 1;
 }
 
 .thumbnail-image img {
-    display: block;
-    margin: auto;
-    height: auto;
     width: 100%;
-}
+    height: auto;
+} 
+
 
 /* slider manual navigation */
 .manual-navigation {
@@ -195,24 +193,23 @@ input[name = "radio-btn"] {
     cursor: pointer;
 }
 
-.next-prev-button {
+.next-button, .prev-button {
     position: relative;
-    left: auto;
-    right: auto;
     top: -55%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 82.5vw;
-    width: 100%;
-    margin: auto;
-}
-
-.next-prev-button img {
     width: 50px;
+    margin: auto;
     cursor: pointer;
 }
 
+.next-button {
+    float: right;
+}
+
 .prev-button {
+    float: left;
     transform: scale(-1);
 }
