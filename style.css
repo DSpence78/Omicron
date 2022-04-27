@@ -84,7 +84,7 @@ input[name = "radio-btn"] {
 /* slider manual navigation */
 .manual-navigation {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     margin-top: 35%;
     left: 0;
     display: flex;
@@ -129,7 +129,7 @@ input[name = "radio-btn"] {
 /* slider automatic navigation */
 .automatic-navigation {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     margin-top: 35%;
     left: 0;
     display: flex;
