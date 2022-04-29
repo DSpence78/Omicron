@@ -54,7 +54,7 @@ input[name = "radio-btn"] {
     display: flex;
     width: 20%;
     height: 100%;
-    transition: 0.75s;
+    transition: 1s;
     align-items: center;
 }
 
@@ -69,6 +69,7 @@ input[name = "radio-btn"] {
     margin: auto;
     gap: 25px;
     padding: 10px 50px;
+    text-align: justify;
 }
 
 .thumbnail-image {
@@ -97,7 +98,7 @@ input[name = "radio-btn"] {
     padding: 5px;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.75s;
+    transition: 1s;
 }
 
 .manual-button:hover {
@@ -142,7 +143,7 @@ input[name = "radio-btn"] {
     padding: 5px;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.75s;
+    transition: 1s;
 }
 
 #radio1:checked ~ .automatic-navigation .auto-button1 {
@@ -180,6 +181,38 @@ input[name = "radio-btn"] {
     border-radius: 5px;
 }
 
+/* main content */
+.content-wrapper {
+    padding: 50px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: justify;
+}
+
+.content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-image {
+    flex: 1;
+    width: 50%;
+}
+
+.content-image img {
+    width: 100%;
+}
+
 /* other components */
 .btn {
     padding: 10px;
@@ -196,12 +229,8 @@ input[name = "radio-btn"] {
 .next-button, .prev-button {
     position: relative;
     top: -55%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 82.5vw;
     width: 50px;
-    margin: auto;
+    /* margin: auto; */
     cursor: pointer;
 }
 
