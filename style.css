@@ -215,12 +215,13 @@ input[name = "radio-btn"] {
 }
 
 .vertical-line {
-    /* make a vertical line */
+    margin: 50px 0;
     border-left: 2px solid #2D6FFA;
     height: 100%;
     position: absolute;
     left: 50%;
     top: 0;
+    opacity: 0.3;
 }
 
 /* other components */
