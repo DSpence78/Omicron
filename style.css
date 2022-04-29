@@ -184,6 +184,7 @@ input[name = "radio-btn"] {
 /* main content */
 .content-wrapper {
     padding: 50px;
+    position: relative;
 }
 
 .content {
@@ -211,6 +212,15 @@ input[name = "radio-btn"] {
 
 .content-image img {
     width: 100%;
+}
+
+.vertical-line {
+    /* make a vertical line */
+    border-left: 2px solid #2D6FFA;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
 }
 
 /* other components */
