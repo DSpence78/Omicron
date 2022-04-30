@@ -220,6 +220,9 @@ input[name = "radio-btn"] {
     border: 2px solid #2D6FFA;
     padding: 10px 5px;
     border-radius: 5px;
+    width: 354px;
+    height:464px;
+    padding:14px,68px,14px,68px;
 }
 
 /* main content */
