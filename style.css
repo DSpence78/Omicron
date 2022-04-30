@@ -5,36 +5,58 @@
     font-family: sans-serif;
 }
 
-/* navbar */
-nav {
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "slider"
+    "main";
+    grid-template-rows: 70px auto 1fr;
+}
+
+/* header & navbar */
+header {
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 25px;
+    padding: 0 25px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:visited {
+    color: inherit;
 }
 
 .logo {
     font-size: 60px;
 }
 
-.nav-menu ul {
+nav ul {
     list-style-type: none;
     display: flex;
     gap: 75px;
 }
 
-.nav-menu a {
-    text-decoration: none;
-}
-
 /* slider */
 .slider {
-    width: 90vw;
+    grid-area: slider;
+    width: 95%;
     height: 40vw;
     margin: 0 auto;
     overflow: hidden;
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke;
     border-radius: 10px;
 }
 
@@ -182,9 +204,18 @@ input[name = "radio-btn"] {
 }
 
 /* main content */
+main {
+    grid-area: main;
+}
+
 .content-wrapper {
     padding: 50px;
     position: relative;
+}
+
+.content p {
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
 .content {
@@ -195,6 +226,10 @@ input[name = "radio-btn"] {
     justify-content: center;
     gap: 50px;
     text-align: justify;
+}
+
+.content ol li {
+    margin-left: 20px;
 }
 
 .content:nth-child(even) {
@@ -233,8 +268,19 @@ input[name = "radio-btn"] {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
-    box-shadow: 5px 5px 1px #2D6FFA;
+    box-shadow: 5px 5px 0 #2D6FFA;
     cursor: pointer;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+.btn:active {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    box-shadow: none;
 }
 
 .next-button, .prev-button {

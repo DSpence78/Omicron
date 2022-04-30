@@ -10,16 +10,16 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="logo">Omicron</div>
-        <div class="nav-menu">
+    <header>
+        <div class="logo"><a href="index.html">Omicron</a></div>
+        <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="">Insight</a></li>
+                <li><a href="insight.html">Insight</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <div class="slider">
         <div class="slides">
             <input type="radio" name="radio-btn" id="radio1" checked onclick="resetTimer();counter = 1;">
@@ -35,7 +35,7 @@
                     <div class="thumbnail-description">
                         <p>Information privacy adalah privasi informasi pribadi dan biasanya berkaitan dengan data pribadi yang tersimpan di sistem komputer. Kebutuhan untuk menjaga privasi informasi berlaku untuk informasi pribadi yang dikumpulkan, seperti catatan medis, data keuangan, catatan kriminal, catatan politik, informasi terkait bisnis, atau data situs web.</p>
                     </div>
-                    <button class="thumbnail-button btn">Pelajari Lebih Lanjut</button>
+                    <a class="thumbnail-button btn" href="#information-privacy">Pelajari Lebih Lanjut</a>
                 </div>
                 <div class="thumbnail-image">
                     <img src="https://img.freepik.com/free-vector/isometric-data-protection-concept-with-parent-child-login-window-lock-3d_1284-63713.jpg?w=740">
@@ -49,7 +49,7 @@
                     <div class="thumbnail-description">
                         <p>Data security mengacu pada proses melindungi data dari akses yang tidak sah dan  menghindari data coruupt  sepanjang siklus hidupnya. Keamanan data mencakup enkripsi data, hashing, tokenization, dan praktik manajemen kunci yang melindungi data di semua aplikasi dan platform.</p>
                     </div>
-                    <button class="thumbnail-button btn">Pelajari Lebih Lanjut</button>
+                    <a class="thumbnail-button btn" href="#data-privacy">Pelajari Lebih Lanjut</a>
                 </div>
                 <div class="thumbnail-image">
                     <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_msdmfngy.json"  background="transparent"  speed="1"  style="width: auto; height: 100%;"  loop  autoplay></lottie-player>
@@ -63,7 +63,7 @@
                     <div class="thumbnail-description">
                         <p>Data protection adalah proses menjaga informasi penting dari korupsi, kompromi atau kehilangan data. Pentingnya perlindungan data meningkat karena jumlah data yang dibuat dan disimpan terus bertambah dengan kecepatan yang belum pernah terjadi sebelumnya. Ada juga sedikit toleransi untuk downtime yang dapat membuat tidak mungkin untuk mengakses informasi penting.</p>
                     </div>
-                    <button class="thumbnail-button btn">Pelajari Lebih Lanjut</button>
+                    <a class="thumbnail-button btn" href="#data-protection">Pelajari Lebih Lanjut</a>
                 </div>
                 <div class="thumbnail-image">
                     <img src="https://img.freepik.com/free-vector/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37368.jpg?t=st=1650410696~exp=1650411296~hmac=49bbd34fa53b106fecdd7c42beed40d18d908be3e0f524b059690c243499aa05&w=740">
@@ -77,7 +77,7 @@
                     <div class="thumbnail-description">
                         <p>Security control adalah parameter yang diterapkan untuk melindungi berbagai bentuk data dan infrastruktur yang penting bagi suatu organisasi. Setiap jenis perlindungan atau tindakan pencegahan yang digunakan untuk menghindari, mendeteksi, melawan, atau meminimalkan risiko keamanan terhadap properti fisik, informasi, sistem komputer, atau aset lainnya dianggap sebagai kontrol keamanan.</p>
                     </div>
-                    <button class="thumbnail-button btn">Pelajari Lebih Lanjut</button>
+                    <a class="thumbnail-button btn" href="#security-control">Pelajari Lebih Lanjut</a>
                 </div>
                 <div class="thumbnail-image">
                     <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_tCCSYl.json"  background="transparent"  speed="0.65"  style="width: auto; height: 100%;"  loop  autoplay></lottie-player>
@@ -91,10 +91,10 @@
                     <div class="thumbnail-description">
                         <p>Cybercrime, juga disebut computer crime, merujuk pada penggunaan komputer sebagai instrumen untuk tujuan ilegal, seperti melakukan penipuan, perdagangan pornografi anak dan kekayaan intelektual, mencuri identitas, atau melanggar privasi. Kejahatan dunia maya, terutama melalui Internet, semakin penting karena komputer telah menjadi pusat perdagangan, hiburan, dan pemerintahan.</p>
                     </div>
-                    <button class="thumbnail-button btn">Pelajari Lebih Lanjut</button>
+                    <a class="thumbnail-button btn" href="#cybercrime">Pelajari Lebih Lanjut</a>
                 </div>
                 <div class="thumbnail-image">
-                    <img src="https://img.freepik.com/free-vector/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37350.jpg?t=st=1650410696~exp=1650411296~hmac=7370ff663848121d8d59360ed938a984673dd2fd8fab127d4626c6637ee469c7&w=1380">
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_rvw0cdtg.json" background="transparent" speed="1" style="width: auto; height: 100%;" loop autoplay></lottie-player>
                 </div>
             </div>
             
@@ -124,12 +124,11 @@
     </div>
     <main>
         <div class="content-wrapper">
-            <div class="content">
+            <div class="content" id="information-privacy">
                 <div class="content-text">
                     <h1>Information Privacy</h1>
                     <p>Information privacy adalah privasi informasi pribadi dan biasanya berkaitan dengan data pribadi yang tersimpan di sistem komputer. Kebutuhan untuk menjaga privasi informasi berlaku untuk informasi pribadi yang dikumpulkan, seperti catatan medis, data keuangan, catatan kriminal, catatan politik, informasi terkait bisnis, atau data situs web.</p>
-                    <p>Privasi informasi dapat diterapkan dalam berbagai cara, termasuk enkripsi, otentikasi, dan penyamaran data, masing-masing mencoba memastikan bahwa informasi hanya tersedia bagi mereka yang memiliki akses resmi. Tindakan perlindungan ini diarahkan untuk mencegah penambangan data dan penggunaan informasi pribadi 
-                        yang tidak sah, yang ilegal di banyak bagian dunia. Privasi medis: Semua catatan medis tunduk pada undang-undang ketat yang mengatur hak akses pengguna. Secara hukum, sistem keamanan dan otentikasi sering kali diperlukan bagi individu yang memproses dan menyimpan catatan medis.
+                    <p>Privasi informasi dapat diterapkan dalam berbagai cara, termasuk enkripsi, otentikasi, dan penyamaran data, masing-masing mencoba memastikan bahwa informasi hanya tersedia bagi mereka yang memiliki akses resmi. Tindakan perlindungan ini diarahkan untuk mencegah penambangan data dan penggunaan informasi pribadi yang tidak sah, yang ilegal di banyak bagian dunia. Privasi medis: Semua catatan medis tunduk pada undang-undang ketat yang mengatur hak akses pengguna. Secara hukum, sistem keamanan dan otentikasi sering kali diperlukan bagi individu yang memproses dan menyimpan catatan medis.
                     </p><br>
                     <p>Privasi informasi berkaitan dengan tipe data yang berbeda, termasuk:<br><br>
                         <ol>
@@ -152,7 +151,7 @@
                     <img src="https://img.freepik.com/free-vector/isometric-data-protection-concept-with-parent-child-login-window-lock-3d_1284-63713.jpg?w=740">
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="data-privacy">
                 <div class="content-text">
                     <h1>Data Privacy</h1>
                     <p></p>
@@ -165,7 +164,7 @@
                     <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_msdmfngy.json"  background="transparent"  speed="1"  style="width: auto; height: 100%;"  loop  autoplay></lottie-player>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="data-protection">
                 <div class="content-text">
                     <h1>Data Protection</h1>
                     <p>Data protection adalah proses menjaga informasi penting dari korupsi, kompromi atau kehilangan data. Pentingnya perlindungan data meningkat karena jumlah data yang dibuat dan disimpan terus bertambah dengan kecepatan yang belum pernah terjadi sebelumnya. Ada juga sedikit toleransi untuk downtime yang dapat membuat tidak mungkin untuk mengakses informasi penting.</p>
@@ -179,7 +178,7 @@
                     <img src="https://img.freepik.com/free-vector/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37368.jpg?t=st=1650410696~exp=1650411296~hmac=49bbd34fa53b106fecdd7c42beed40d18d908be3e0f524b059690c243499aa05&w=740">
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="security-control">
                 <div class="content-text">
                     <h1>Security Control</h1>
                     <p>Security control adalah parameter yang diterapkan untuk melindungi berbagai bentuk data dan infrastruktur yang penting bagi suatu organisasi. Setiap jenis perlindungan atau tindakan pencegahan yang digunakan untuk menghindari, mendeteksi, melawan, atau meminimalkan risiko keamanan terhadap properti fisik, informasi, sistem komputer, atau aset lainnya dianggap sebagai kontrol keamanan.</p>
@@ -197,7 +196,7 @@
                     <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_tCCSYl.json"  background="transparent"  speed="0.65"  style="width: auto; height: 100%;"  loop  autoplay></lottie-player>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="cybercrime">
                 <div class="content-text">
                     <h1>Cybercrime</h1>
                     <p>Cybercrime, juga disebut computer crime, merujuk pada penggunaan komputer sebagai instrumen untuk tujuan ilegal, 
@@ -213,7 +212,7 @@
 
                 </div>
                 <div class="content-image">
-                    <img src="https://img.freepik.com/free-vector/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37350.jpg?t=st=1650410696~exp=1650411296~hmac=7370ff663848121d8d59360ed938a984673dd2fd8fab127d4626c6637ee469c7&w=1380">
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_rvw0cdtg.json" background="transparent" speed="1" style="width: auto; height: 100%;" loop autoplay></lottie-player>
                 </div>
             </div>
             <div class="vertical-line"></div>
