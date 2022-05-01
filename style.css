@@ -232,7 +232,8 @@ main {
 }
 
 .content-wrapper {
-    padding: 50px;
+    padding: 0 50px;
+    margin: 50px 0;
     position: relative;
 }
 
@@ -291,16 +292,15 @@ main {
 
 .number-end {
     top: 100%;
-    background-color: transparent;
 }
 
 .vertical-line {
     margin: auto;
     border-left: 2px solid #2D6FFA;
-    height: 97.5%;
+    height: 100%;
     position: absolute;
     left: 50%;
-    top: 50px;
+    top: 0;
     opacity: 0.3;
 }
 
