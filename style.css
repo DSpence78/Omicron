@@ -74,9 +74,9 @@ nav a {
     grid-area: slider;
     width: 95%;
     height: 40vw;
-    margin: 0 auto;
+    margin: 10px auto;
     overflow: hidden;
-    /* background-color: whitesmoke; */
+    background-color: rgba(245, 245, 245, 0.413);
     border-radius: 10px;
 }
 
@@ -302,6 +302,35 @@ main {
     left: 50%;
     top: 0;
     opacity: 0.3;
+}
+
+/* insight */
+.chart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.container {
+    height: 50vw;
+    /* margin: 50px; */
+}
+
+.container:nth-child(even) {
+    background-color: lightblue;
+}
+
+.container:nth-child(odd) {
+    background-color: lightcoral;
+}
+
+.embed-article {
+    width: 80vw;
+    margin: auto;
+}
+
+.embed-article iframe {
+    width: 100%;
 }
 
 /* other components */
