@@ -11,15 +11,16 @@
 body {
     display: grid;
     grid-template-areas: 
-    "header"
+    "nav"
     "slider"
     "main";
     grid-template-rows: 70px auto 1fr;
+    background-color: #fff;
 }
 
 /* header & navbar */
 header {
-    grid-area: header;
+    grid-area: nav;
     position: fixed;
     top: 0;
     height: 70px;
@@ -43,10 +44,20 @@ header a:visited {
     color: inherit;
 }
 
+.intro {
+    grid-area: header;
+}
+
 .logo a {
     font-family: 'Sora', sans-serif;
     font-size: 48px;
     font-weight: 600;
+    text-transform: uppercase;
+    -webkit-background: -webkit-linear-gradient(45deg, #2D6FFA, #000);
+    background: linear-gradient(#2D6FFA, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav ul {
@@ -273,7 +284,7 @@ main {
 .content-image {
     flex: 1;
     height: 450px;
-
+    align-self: flex-start;
 }
 
 .content-image img {
