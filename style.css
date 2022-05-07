@@ -69,6 +69,11 @@ nav ul {
 
 nav a {
     font-size: 18px;
+    padding: 25px 0;
+}
+
+nav a:hover {
+    font-weight: 900;
 }
 
 .active {
