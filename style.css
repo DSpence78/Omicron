@@ -320,8 +320,7 @@ main {
     font-weight: 600;
     text-align: center;
     width: 60%;
-    padding: 10px;
-    margin: 10px;
+    margin-bottom: 20px;
 }
 
 .insight-container .title::after {
