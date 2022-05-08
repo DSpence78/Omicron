@@ -41,10 +41,12 @@ var menuOpen = false;
 
 function openMenu() {
     document.querySelector('.menu-btn').setAttribute('class', 'menu-btn open');
+    document.querySelector('nav ul').setAttribute('class', 'show');
 }
 
 function closeMenu() {
     document.querySelector('.menu-btn').setAttribute('class', 'menu-btn');
+    document.querySelector('nav ul').setAttribute('class', '');
 }
 
 function menu() {

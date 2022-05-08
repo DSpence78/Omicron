@@ -16,9 +16,13 @@
         height: 350px;
         width: 100%;
     }
+
+    .card-container {
+        gap: 60px;
+    }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 810px) {
     header {
         border-radius: 0;
     }
@@ -96,6 +100,18 @@
     .number {
         box-shadow: 0 0 25px #2D6FFA;
     }
+
+    .card-container {
+        gap: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .insight-img {
+        opacity: 1;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -106,5 +122,50 @@
     /* menu-btn and all child display block */
     .menu-btn {
         display: flex;
+        flex: 1;
+        z-index: 2;
     }
+
+    ul.show {
+        display: flex;
+    }
+    
+    nav ul {
+        position: absolute;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul a {
+        font-size: 32px;
+    }
+
+    .img-wrapper {
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .insight-container {
+        padding: 20px 0;
+    }
+
+    .insight-container .title {
+        font-size: 32px;
+    }
+
+    .container .team-name {
+        font-size: 32px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
 }
