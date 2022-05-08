@@ -36,3 +36,23 @@ function previousSlide() {
     document.getElementById('radio' + counter).checked = true;
     resetTimer();
 }
+
+var menuOpen = false;
+
+function openMenu() {
+    document.querySelector('.menu-btn').setAttribute('class', 'menu-btn open');
+}
+
+function closeMenu() {
+    document.querySelector('.menu-btn').setAttribute('class', 'menu-btn');
+}
+
+function menu() {
+    if (menuOpen) {
+        closeMenu();
+        menuOpen = false;
+    } else {
+        openMenu();
+        menuOpen = true;
+    }
+}
