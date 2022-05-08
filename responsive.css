@@ -67,6 +67,7 @@
     .thumbnail-image img {
         height: 350px;
         width: auto;
+        margin: auto;
     }
 
     .manual-navigation, .automatic-navigation {
