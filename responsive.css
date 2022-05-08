@@ -38,6 +38,8 @@
         flex-direction: column;
         width: 20%;
         position: relative;
+        align-items: center;
+        justify-content: center;
     }
 
     .thumbnail-text {
@@ -58,6 +60,8 @@
         height: 350px;
         width: auto;
         margin-bottom: 25%;
+        align-self: center;
+        justify-content: center;
     }
 
     .thumbnail-image img {
