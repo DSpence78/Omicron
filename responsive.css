@@ -35,22 +35,33 @@
     }
 
     .thumbnail {
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 20%;
+        position: relative;
     }
 
     .thumbnail-text {
         width: 100%;
         margin-bottom: 5%;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        flex: 0;
+        gap: 10px;
+    }
+
+    .thumbnail-description {
+        display: none;
     }
 
     .thumbnail-image {
-        height: 500px;
+        height: 300px;
         width: auto;
+        margin-bottom: 25%;
     }
 
     .thumbnail-image img {
-        height: 100%;
+        height: 300px;
         width: auto;
     }
 
@@ -60,6 +71,8 @@
     
     .next-button, .prev-button {
         visibility: visible;
+        width: 40px;
+        height: auto;
     }
 
     .content, .content:nth-child(even) {
@@ -74,7 +87,6 @@
     .content-text {
         justify-self: center;
         width: 100%;
-        /* background-color: whitesmoke; */
         padding: 10px;
         border-radius: 10px;
     }
@@ -97,10 +109,6 @@
         visibility: hidden;
     }
 
-    .number {
-        box-shadow: 0 0 25px #2D6FFA;
-    }
-
     .card-container {
         gap: 20px;
     }
@@ -119,7 +127,6 @@
         display: none;
     }
 
-    /* menu-btn and all child display block */
     .menu-btn {
         display: flex;
         flex: 1;
@@ -149,6 +156,12 @@
     .img-wrapper {
         flex-direction: column;
         border-radius: 0;
+        background-color: transparent;
+    }
+
+    .insight-img:hover {
+        border-radius: 25px;
+        transform: scale(1);
     }
 
     .insight-container {
