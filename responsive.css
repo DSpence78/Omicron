@@ -70,15 +70,15 @@
     .thumbnail-image {
         position: absolute;
         top: 0;
-        height: 100%;
-        width: auto;
+        width: 500px;
+        height: auto;
         align-self: center;
         justify-content: center;
     }
     
     .thumbnail-image img {
-        height: 100%;
-        width: auto;
+        width: 500px;
+        height: auto;
         margin: auto;
     }
 
@@ -169,6 +169,16 @@
     
     nav ul a {
         font-size: 32px;
+    }
+
+    .thumbnail-image {
+        width: 400px;
+        height: auto;
+    }
+    
+    .thumbnail-image img {
+        width: 400px;
+        height: auto;
     }
 
     .img-wrapper {
