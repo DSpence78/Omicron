@@ -35,12 +35,14 @@
         height: 50vh;
     }
 
+    .slides {
+        height: 100%;
+    }
+
     .thumbnail {
-        padding-bottom: 20%;
-        flex-direction: column;
-        width: 20%;
         height: 100%;
         position: relative;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -49,7 +51,7 @@
         width: 75%;
         margin-bottom: 5%;
         position: absolute;
-        bottom: 20px;
+        bottom: 5%;
         gap: 10px;
         z-index: 2;
         background-color: rgba(190, 206, 243, 0.9);
@@ -67,7 +69,7 @@
 
     .thumbnail-image {
         position: absolute;
-        top: -10%;
+        top: 0;
         height: 100%;
         width: auto;
         align-self: center;
@@ -76,7 +78,6 @@
     
     .thumbnail-image img {
         height: 100%;
-        width: auto;
         width: auto;
         margin: auto;
     }
