@@ -293,6 +293,9 @@ main {
 .content-text {
     flex: 1;
     align-self: flex-start;
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 10px;
+    border-radius: 25px;
 }
 
 .content-image {

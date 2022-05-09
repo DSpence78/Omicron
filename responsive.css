@@ -25,31 +25,40 @@
 @media all and (max-width: 810px) {
     header {
         border-radius: 0;
+        z-index: 3;
     }
 
     .slider {
-        height: auto;
         width: 100vw;
         margin: 0;
         border-radius: 0;
+        height: 50vh;
     }
 
     .thumbnail {
+        padding-bottom: 20%;
         flex-direction: column;
         width: 20%;
+        height: 100%;
         position: relative;
         align-items: center;
         justify-content: center;
     }
 
     .thumbnail-text {
-        width: 100%;
+        width: 75%;
         margin-bottom: 5%;
         position: absolute;
         bottom: 20px;
-        left: 0;
-        flex: 0;
         gap: 10px;
+        z-index: 2;
+        background-color: rgba(190, 206, 243, 0.9);
+        font-size: 13px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 15px 0;
+        border-radius: 15px;
     }
 
     .thumbnail-description {
@@ -57,15 +66,17 @@
     }
 
     .thumbnail-image {
-        height: 350px;
+        position: absolute;
+        top: -10%;
+        height: 100%;
         width: auto;
-        margin-bottom: 25%;
         align-self: center;
         justify-content: center;
     }
-
+    
     .thumbnail-image img {
-        height: 350px;
+        height: 100%;
+        width: auto;
         width: auto;
         margin: auto;
     }
@@ -86,14 +97,14 @@
     }
 
     .content-wrapper {
-        padding: 0 10px;
+        padding: 0;
     }
     
     .content-text {
         justify-self: center;
         width: 100%;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 0;
     }
 
     .content-image {
