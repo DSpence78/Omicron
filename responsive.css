@@ -32,7 +32,7 @@
         width: 100vw;
         margin: 0;
         border-radius: 0;
-        height: 70vh;
+        height: 500px;
     }
 
     .slides {
@@ -71,7 +71,7 @@
         position: absolute;
         top: 0;
         width: 500px;
-        height: auto;
+        height: 500px;
         align-self: center;
         justify-content: center;
     }
