@@ -86,7 +86,7 @@ nav a:hover {
 }
 
 .active::after {
-    content: " ";
+    content: "";
     display: block;
     width: 100%;
     height: 3px;
@@ -353,13 +353,13 @@ main {
 }
 
 .insight-container .title::after {
-    content: " ";
+    content: "";
     display: block;
     height: 5px;
     background-color: #000;
     width: 100%;
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .img-wrapper {
@@ -419,12 +419,12 @@ main {
 
 .container .team-name::after {
     display: block;
-    content: " ";
+    content: "";
     width: 100%;
     height: 5px;
     background-color: #000;
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .card-container {
@@ -536,7 +536,7 @@ a.btn {
 }
 
 .menu-bar::before, .menu-bar::after {
-    content: " ";
+    content: "";
     position: absolute;
     height: 5px;
     background-color: #000;
