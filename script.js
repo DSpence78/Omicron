@@ -40,13 +40,13 @@ function previousSlide() {
 var menuOpen = false;
 
 function openMenu() {
-    document.querySelector('.menu-btn').setAttribute('class', 'menu-btn open');
-    document.querySelector('nav ul').setAttribute('class', 'show');
+    document.querySelector('.menu-btn').classList.add('open');
+    document.querySelector('nav ul').classList.add('show');
 }
 
 function closeMenu() {
-    document.querySelector('.menu-btn').setAttribute('class', 'menu-btn');
-    document.querySelector('nav ul').setAttribute('class', '');
+    document.querySelector('.menu-btn').classList.remove('open');
+    document.querySelector('nav ul').classList.remove('show');
 }
 
 function menu() {
@@ -56,5 +56,28 @@ function menu() {
     } else {
         openMenu();
         menuOpen = true;
+    }
+}
+
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i = 0; i < reveals.length; i++) {
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 500;
+
+        if (document.querySelector('.vertical-line').getBoundingClientRect().top < revealPoint) {
+            document.querySelector('.vertical-line').style.opacity = 1;
+        } else {
+            document.querySelector('.vertical-line').style.opacity = 0;
+        }
+
+        if (revealTop < revealPoint) {
+            reveals[i].classList.add('act');
+        } else {
+            reveals[i].classList.remove('act');
+        }
     }
 }

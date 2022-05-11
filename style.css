@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Sora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Sora:wght@600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: black;
 }
 
@@ -73,6 +73,7 @@ nav ul {
 }
 
 nav a {
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     padding: 25px 0;
 }
@@ -138,6 +139,7 @@ input[name = "radio-btn"] {
     gap: 25px;
     padding: 10px 50px;
     text-align: justify;
+    line-height: 1.5;
 }
 
 .thumbnail-image {
@@ -276,6 +278,13 @@ main {
     gap: 100px;
     text-align: justify;
     position: relative;
+    opacity: 0;
+    transition: 1s;
+}
+
+.act {
+    transition: 1s;
+    opacity: 1;
 }
 
 .content:not(:first-child) {
@@ -296,6 +305,7 @@ main {
     background-color: rgba(245, 245, 245, 0.9);
     padding: 10px;
     border-radius: 25px;
+    line-height: 1.5;
 }
 
 .content-image {
@@ -333,6 +343,7 @@ main {
     left: 50%;
     top: 0;
     opacity: 0.3;
+    opacity: 0;
 }
 
 /* insight */
