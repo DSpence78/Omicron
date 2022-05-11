@@ -69,7 +69,7 @@ function reveal() {
         var revealPoint = 500;
 
         if (document.querySelector('.vertical-line').getBoundingClientRect().top < revealPoint) {
-            document.querySelector('.vertical-line').style.opacity = 1;
+            document.querySelector('.vertical-line').style.opacity = 0.8;
         } else {
             document.querySelector('.vertical-line').style.opacity = 0;
         }

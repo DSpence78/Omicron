@@ -280,11 +280,14 @@ main {
     position: relative;
     opacity: 0;
     transition: 1s;
+    transform: translateY(50px);
+    z-index: 1;
 }
 
 .act {
     transition: 1s;
     opacity: 1;
+    transform: translateY(0);
 }
 
 .content:not(:first-child) {
@@ -342,8 +345,8 @@ main {
     position: absolute;
     left: 50%;
     top: 0;
-    opacity: 0.3;
     opacity: 0;
+    transition: 5s;
 }
 
 /* insight */
