@@ -93,7 +93,7 @@
 
     .content, .content:nth-child(even) {
         gap: 25px;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .content-wrapper {
@@ -109,6 +109,7 @@
     }
 
     .content-image {
+        order: -1;
         margin-top: 10px;
         width: 350px;
         height: auto;
