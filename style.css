@@ -49,6 +49,19 @@ header a:visited {
     grid-area: header;
 }
 
+.logo {
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    border-left: 4px solid #000;
+    padding-left: 7.5px;
+    margin-left: 7.5px;
+    font-weight: 600;
+}
+
 .logo a {
     font-family: 'Sora', sans-serif;
     font-size: 48px;

@@ -28,6 +28,14 @@
         z-index: 3;
     }
 
+    .logo {
+        width: auto;
+    }
+
+    .logo span {
+        display: none;
+    }
+
     .slider {
         width: 96%;
         margin: 10px auto;
